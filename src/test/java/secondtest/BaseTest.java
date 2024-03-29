@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class Testjava {
+public class BaseTest {
     WebDriver driver;
     @BeforeMethod
 
@@ -16,7 +16,7 @@ public class Testjava {
     }
 //    @AfterMethod
 //
-//    public void quit(){
-//        driver.quit();
-//    }
+//   public void quit(){
+//      driver.quit();
+//  }
 }

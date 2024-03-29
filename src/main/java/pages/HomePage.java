@@ -5,12 +5,21 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePage {
 
-    WebDriver driver;
+   private WebDriver driver;
+    public HomePage(WebDriver driver){
+        this.driver=driver;
+    }
     String productName = "Sauce Labs Bolt T-Shirt";
 
-    By testElement = By.className("peek");
+    private  By testElement = By.className("peek");
 
-    By productLink = By.xpath("//div[text()=\""+productName+"\"]");
+     private By productLink = By.xpath("//div[text()=\""+productName+"\"]");
+     public By getHeaderArea(){
+         return testElement;
+     }
+    public void openProduct(){
+        driver.findElement(productLink).click();
+    }
 
 
 }
